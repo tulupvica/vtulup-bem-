@@ -4,14 +4,21 @@ html {
 
 body {
   margin: 0;
-  color: $base-text-color;
-  font: $base-font-weight  #{$base-font-size}/#{$base-line-height} $base-font-family;
+  //color: $base-text-color;
+  //font: $base-font-weight  #{$base-font-size}/#{$base-line-height} $base-font-family;
 }
 
 html,
 body {
   height: 100%;
 }
+
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
 .main-wrapper {
   display: flex;
   flex-direction: column;
