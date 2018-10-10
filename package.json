@@ -62,6 +62,7 @@
   },
   "dependencies": {
     "include-media": "^1.4.9",
-    "jquery": "^3.3.1"
+    "jquery": "^3.3.1",
+    "slick-carousel": "^1.8.1"
   }
 }
