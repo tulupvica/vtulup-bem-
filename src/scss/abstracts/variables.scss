@@ -1,45 +1,16 @@
-// Global variables
-//
-// Base font styles for headings and links.
 
-// For headers
-$headings: (
-  'sizes': (
-    'h1-font-size': 30px,
-    'h2-font-size': 27px,
-    'h3-font-size': 24px,
-    'h4-font-size': 21px,
-    'h5-font-size': 17px,
-    'h6-font-size': 15px
-  ),
-  'fonts': (
-    'headings-font-family': inherit,
-    'headings-color': inherit
-  )
-);
+$gray: #333333;
+
+$base-font-sans-serif: 'Roboto', 'Open Sans', 'Helvetica Neue', 'Helvetica', sans-serif;
+$title-font: 'Playfair Display', serif;
+$btn-font: 'Hammersmith One', sans-serif;
 
 // Global vars for body typography
-$base: (
-  'base-font-sans-serif': unquote("Arial, 'Helvetica Neue', Helvetica, sans-serif"),
-  'base-font-serif': unquote("'Times New Roman', Times, Baskerville, Georgia, serif"),
-  'base-text-color': #000,
-  'base-background-color': #fff,
-  'base-link-color':#39f,
-  'base-font-size': 16px,
-  'base-line-height': 1.2,
-  'base-font-family': unquote("Arial, 'Helvetica Neue', Helvetica, sans-serif"),
-  'vertical-rhythm': '(map-get($base, base-line-height) * 1em)',
-  'base-min-width': 320px
-);
-
-// Vars for forms
-$forms: (
-  'form-font-family': unquote("Arial, 'Helvetica Neue', Helvetica, sans-serif"),
-  'form-element-padding': unquote("0.4em 0.7em"),
-  'form-element-border-color': #999,
-  'form-element-focus-border-color': #000,
-  'placeholder-color': #999
-);
+$base-text-color: $gray !default;
+$base-font-size: 14px !default;
+$base-line-height: 22px !default;
+$base-font-weight: 300;
+$base-font-family: $base-font-sans-serif !default;
 
 // Breakpoints for include media mixin
 $breakpoints: (
