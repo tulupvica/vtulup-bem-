@@ -1,4 +1,7 @@
 .btn {
+  @include animate(opacity);
+
+  cursor: pointer;
   background-color: transparent;
   min-width: 120px;
   border: 1px solid #00e0d0;
@@ -7,5 +10,8 @@
   color: #00e0d0;
   font: 400  16px/0 $btn-font;
   text-transform: uppercase;
-  
+
+  &:hover {
+    opacity: 0.6;
+  }
 }
