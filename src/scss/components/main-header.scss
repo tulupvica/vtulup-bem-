@@ -1,0 +1,16 @@
+.main-header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  max-width: 100%;
+  padding: 14px 0;
+  background-color: rgba(45, 39, 77, 0.73);
+
+  &__content {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+}

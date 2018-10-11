@@ -1,0 +1,75 @@
+.burger-btn {
+  align-self: center;
+  display: none;
+  position: relative;
+  width: 28px;
+  height: 26px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  z-index: 3;
+
+  &:focus {
+    outline: none;
+  }
+
+  @include media('<tablet') {
+    display: block;
+  }
+
+  &__line,
+  &__line:after,
+  &__line:before {
+    @include animate(transform);
+
+    display: block;
+    position: absolute;
+    width: 30px;
+    height: 2px;
+    background-color: #fff;
+    top: 50%;
+    left: 0;
+    border-radius: 3px;
+    transform: translate(0, -50%);
+  }
+
+  &__line {
+    &:before,
+    &:after {
+      content: '';
+      position: absolute;
+    }
+
+    &:before {
+      top: -7px;
+    }
+
+    &:after {
+      top: 8px;
+    }
+  }
+
+  &_active & {
+
+    &__line {
+      height: 0;
+    }
+
+    &__line:before,
+    &__line:after {
+      top: 0;
+    }
+
+    &__line {
+      &:before {
+        transform: rotate(45deg);
+      }
+    }
+
+    &__line {
+      &:after {
+        transform: rotate(-45deg);
+      }
+    }
+  }
+}

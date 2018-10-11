@@ -1,0 +1,9 @@
+.logo {
+  @include animate(opacity);
+
+  display: inline-block;
+
+  &:hover {
+    opacity: 0.6;
+  }
+}
