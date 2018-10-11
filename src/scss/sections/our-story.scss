@@ -1,0 +1,41 @@
+.section-our-story {
+  padding: 50px 0;
+
+  &__box {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 0 -12px;
+  }
+
+  &__item {
+    margin: 0 auto;
+    max-width: 45%;
+    padding: 16px 2px 16px 12px;
+  }
+
+  &__img-wrap {
+    width: 235px;
+  }
+
+  &__content {
+    padding: 16px 12px;
+    max-width: 55%;
+  }
+
+  &__title {
+    margin: 0 0 20px;
+  }
+
+  &__text {
+    font: $base-font-weight  #{$base-font-size}/#{$base-line-height} $base-font-family;
+    color: rgba(65, 61, 75, 0.75);
+    margin: 0 0 22px;
+  }
+
+  &__btn {
+    margin: 6px 0 0 0;
+  }
+
+
+}
