@@ -7,7 +7,10 @@ const heroSlider = {
         $slider.slick({
             infinite: true,
             slidesToShow: 1,
-            slidesToScroll: 1
+            slidesToScroll: 1,
+            arrows: false,
+            dots: true,
+            dotsClass: 'hero-slider__dots'
         });
     }
 };
