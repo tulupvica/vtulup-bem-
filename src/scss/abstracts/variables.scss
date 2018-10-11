@@ -1,5 +1,14 @@
 
 $gray: #333333;
+$green: #00e0d0;
+$white: #fff;
+
+
+$bg-gradient: linear-gradient(to right, rgba(9,5,47,0.85) 0%,rgba(49,29,94,0.85) 100%);
+
+$btn-color: $green;
+$btn-text-color: $green;
+$links-hover-color: $green;
 
 $base-font-sans-serif: 'Roboto', 'Open Sans', 'Helvetica Neue', 'Helvetica', sans-serif;
 $title-font: 'Playfair Display', serif;
@@ -7,6 +16,8 @@ $btn-font: 'Hammersmith One', sans-serif;
 
 // Global vars for body typography
 $base-text-color: $gray !default;
+$secondary-text-color: $white !default;
+$secondary-title-color: $white !default;
 $base-font-size: 14px !default;
 $base-line-height: 22px !default;
 $base-font-weight: 300;

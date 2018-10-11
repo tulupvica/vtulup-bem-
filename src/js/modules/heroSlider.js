@@ -4,6 +4,10 @@ const heroSlider = {
 
         const $slider = $('.hero-slider');
 
+        if(!$slider.length){
+            return;
+        }
+
         $slider.slick({
             infinite: true,
             slidesToShow: 1,

@@ -1,10 +1,10 @@
 .btn {
   background-color: transparent;
   min-width: 120px;
-  border: 1px solid #00e0d0;
+  border: 1px solid $btn-color;
   border-radius: 3px;
   padding: 20px 10px 19px;
-  color: #00e0d0;
+  color: $btn-text-color;
   font: 400  16px/0 $btn-font;
   text-transform: uppercase;
 }
