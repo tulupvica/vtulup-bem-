@@ -4,13 +4,16 @@ html {
 
 body {
   margin: 0;
-  //color: $base-text-color;
-  //font: $base-font-weight  #{$base-font-size}/#{$base-line-height} $base-font-family;
 }
 
 html,
 body {
   height: 100%;
+}
+
+.main-wrapper {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 .container {

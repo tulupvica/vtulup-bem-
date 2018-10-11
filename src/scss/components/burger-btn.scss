@@ -15,6 +15,9 @@
 
   @include media('<tablet') {
     display: block;
+    position: fixed;
+    top: 8px;
+    right: 12px;
   }
 
   &__line,
@@ -26,7 +29,7 @@
     position: absolute;
     width: 30px;
     height: 2px;
-    background-color: #fff;
+    background-color: $white;
     top: 50%;
     left: 0;
     border-radius: 3px;

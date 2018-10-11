@@ -17,7 +17,8 @@ const burgerBtn = {
 
         $(window).on('resize', function () {
             if($(window).width() > width) {
-                $nav.removeAttr('style');
+                $nav.removeClass($navActive);
+                $btn.removeClass($btnActive);
             }
         });
     }

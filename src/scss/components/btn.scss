@@ -1,0 +1,10 @@
+.btn {
+  background-color: transparent;
+  min-width: 120px;
+  border: 1px solid $btn-color;
+  border-radius: 3px;
+  padding: 20px 10px 19px;
+  color: $btn-text-color;
+  font: 400  16px/0 $btn-font;
+  text-transform: uppercase;
+}
