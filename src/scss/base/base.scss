@@ -4,6 +4,10 @@ html {
 
 body {
   margin: 0;
+
+  &.hidden-scroll {
+    overflow: hidden;
+  }
 }
 
 html,

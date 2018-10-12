@@ -17,9 +17,6 @@ $burger-btn-color: #fff;
 
   @include media('<tablet') {
     display: block;
-    position: fixed;
-    top: 8px;
-    right: 12px;
   }
 
   &__line,
