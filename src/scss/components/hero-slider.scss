@@ -60,6 +60,10 @@
       margin: 0 0 36px;
     }
 
+    @media ( max-height: 420px ){
+      margin: 0 0 20px;
+    }
+
     &:after {
       content: '';
       position: absolute;
@@ -80,6 +84,14 @@
     transform: translateX(-50%);
     bottom: 60px;
     display: flex;
+
+    @media ( max-height: 420px ){
+      bottom: 20px;
+    }
+
+    @media ( max-height: 300px ){
+      bottom: 5px;
+    }
 
     li {
       cursor: pointer;
