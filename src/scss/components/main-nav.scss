@@ -1,4 +1,11 @@
+
+
 .main-nav {
+
+  $links-color: #fff;
+  $links-active-color: #00e0d0;
+  $links-border-color: rgba(34, 34, 70, 0.97);
+  $nav-bg-color: #312952;
 
   align-self: center;
 
@@ -14,7 +21,7 @@
     right: 0;
     bottom: 0;
     left: 0;
-    background-color: #312952;
+    background-color: $nav-bg-color;
     z-index: 2;
 
     &_active{
@@ -41,7 +48,7 @@
 
     @include media ('<tablet') {
       margin: 0 0;
-      border-bottom: 1px solid rgba(34, 34, 70, 0.97);
+      border-bottom: 1px solid $links-border-color;
     }
   }
 
@@ -51,12 +58,12 @@
     display: block;
     text-transform: uppercase;
     font: 900  13px/0 $base-font-family;
-    color: $secondary-text-color;
+    color: $links-color;
     text-decoration: none;
 
     &_active,
     &:hover {
-      color: $links-hover-color;
+      color: $links-active-color;
     }
 
     @include media ('<tablet') {

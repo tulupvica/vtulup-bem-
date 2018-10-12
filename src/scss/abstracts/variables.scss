@@ -1,7 +1,4 @@
-//Colors
 $gray: #333333;
-$black: #413d4b;
-
 
 $base-font-sans-serif: 'Roboto', 'Open Sans', 'Helvetica Neue', 'Helvetica', sans-serif;
 $title-font: 'Playfair Display', serif;
@@ -11,7 +8,7 @@ $btn-font: 'Hammersmith One', sans-serif;
 $base-text-color: $gray !default;
 $base-font-size: 14px !default;
 $base-line-height: 22px !default;
-$base-font-weight: 300 !default;
+$base-font-weight: 300;
 $base-font-family: $base-font-sans-serif !default;
 
 // Breakpoints for include media mixin
