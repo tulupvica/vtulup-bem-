@@ -1,4 +1,7 @@
 .section-hero {
+
+  $bg-gradient: linear-gradient(to right, rgba(9,5,47,0.85) 0%,rgba(49,29,94,0.85) 100%);
+
   position: relative;
   height: 100vh;
   background-size: cover;
@@ -20,113 +23,4 @@
     min-height: 536px;
   }
 
-}
-
-.hero-slider {
-
-  &__slide {
-    position: relative;
-    height: 100vh;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-
-    @include media ('<phone') {
-      height: auto;
-      min-height: 536px;
-    }
-  }
-
-  &__content {
-    margin: 0 auto;
-    text-align: center;
-    padding: 0 20px;
-    width: 45%;
-
-    @include media ('<desktop') {
-      width: 80%;
-    }
-
-    @include media ('<tablet') {
-      width: 100%;
-    }
-  }
-
-  &__title {
-    text-transform: capitalize;
-    color: $secondary-text-color;
-    font: 900  32px/36px $title-font;
-    margin: 0 0 22px;
-
-    @include media ('<tablet') {
-      font: 900  28px/30px $title-font;
-    }
-
-    @include media ('<phone') {
-      font: 900  24px/26px $title-font;
-    }
-  }
-
-  &__entry {
-    position: relative;
-    color: $secondary-text-color;
-    font: $base-font-weight  #{$base-font-size}/24px $base-font-family;
-    margin: 0 0 48px;
-    padding-top: 24px;
-
-    @include media ('<phone') {
-      margin: 0 0 36px;
-    }
-
-    &:after {
-      content: '';
-      position: absolute;
-      top: 0;
-      left: 50%;
-      transform: translate(-50%, 0);
-      height: 1px;
-      width: 50px;
-      background-color: $green;
-    }
-  }
-
-  &__dots {
-    @extend %listreset;
-
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    bottom: 60px;
-    display: flex;
-
-    li {
-      cursor: pointer;
-      margin: 0 3px;
-      width: 8px;
-      background-color: transparent;
-      height: 8px;
-      border: 1px solid $white;
-      border-radius: 50%;
-      overflow: hidden;
-    }
-
-    .slick-active {
-      border: 1px solid transparent;
-      background-color: $btn-color;
-    }
-
-    button {
-      display: block;
-      border: none;
-      font-size: 0;
-      background: none;
-      padding: 0;
-    }
-
-  }
-
-  .slick-slide {
-    outline: none
-  }
 }

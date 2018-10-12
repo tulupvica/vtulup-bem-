@@ -1,3 +1,5 @@
+$burger-btn-color: #fff;
+
 .burger-btn {
   align-self: center;
   display: none;
@@ -29,7 +31,7 @@
     position: absolute;
     width: 30px;
     height: 2px;
-    background-color: $white;
+    background-color: $burger-btn-color;
     top: 50%;
     left: 0;
     border-radius: 3px;
