@@ -2,6 +2,7 @@
 
   $title-color: #413d4b;
   $subtitle-color: rgba(47, 45, 53, 0.75);
+  $separator-color: #c6c4c9;
 
   padding: 40px 0;
 
@@ -23,6 +24,7 @@
     &:before {
       left: 50%;
       transform: translate(-50%, 0);
+      background-color: $separator-color;
     }
   }
 
