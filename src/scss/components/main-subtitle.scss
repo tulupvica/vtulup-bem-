@@ -1,0 +1,18 @@
+.main-subtitle {
+
+  $subtitle-color: rgba(47, 45, 53, 0.75);
+
+  position: relative;
+  padding: 0 0 19px;
+  font: 400 14px/18px $title-font;
+  color: $subtitle-color;
+
+  &:before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    width: 50px;
+    height: 2px;
+    background-color: #c6c4c9;
+  }
+}

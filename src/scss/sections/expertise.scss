@@ -1,0 +1,19 @@
+.section-expertise {
+
+  padding: 40px 0;
+
+  &__title {
+    margin: 0 0 11px;
+    text-align: center;
+  }
+
+  &__subtitle {
+    margin: 0 0 10px;
+    text-align: center;
+
+    &:before {
+      left: 50%;
+      transform: translate(-50%, 0);
+    }
+  }
+}
