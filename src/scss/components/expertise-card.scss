@@ -1,0 +1,52 @@
+.expertise-card {
+
+  $heading-color: #413d4b;
+  $text-color: rgba(51, 51, 51, 0.75);
+  $border-color: #ebebeb;
+
+  margin: -1px;
+  border-left: 1px solid $border-color;
+  border-bottom: 1px solid $border-color;
+  padding: 35px 25px 28px;
+  width: 28%;
+  text-align: center;
+
+  @include media ('<desktop') {
+    width: 45%;
+    padding: 25px 15px 18px;
+  }
+
+  @include media ('<tablet') {
+    padding: 25px 10px 18px;
+  }
+
+  @include media ('<phone') {
+    width: 100%;
+  }
+
+  &__img {
+    margin: 0 0 22px;
+    min-height: 54px;
+
+    @include media ('<tablet') {
+      margin: 0 0 18px;
+    }
+  }
+
+  &__heading {
+    margin: 0 0 16px;
+    font: 900 14px/18px $base-font-family;
+    text-transform: uppercase;
+    color: $heading-color;
+
+    @include media ('<tablet') {
+      margin: 0 0 10px;
+    }
+  }
+
+  &__text {
+    margin: 0 0 10px;
+    color: $text-color;
+    font: $base-font-weight #{$base-font-size}/#{$base-line-height} $base-font-family;
+  }
+}
