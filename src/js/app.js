@@ -4,14 +4,14 @@ import hiddenScroll from './modules/hiddenScroll';
 import testimonialSlider from './modules/testimonialSlider';
 
 ( ($) => {
-  'use strict';
+    'use strict';
 
-  // When DOM is ready
-  $(() => {
-      burgerBtn.burgerBtn();
-      heroSlider.heroSlider();
-      hiddenScroll.hiddenScroll();
-      testimonialSlider.testimonialSlider();
-  });
+    // When DOM is ready
+    $(() => {
+        burgerBtn.burgerBtn();
+        heroSlider.heroSlider();
+        hiddenScroll.hiddenScroll();
+        testimonialSlider.testimonialSlider();
+    });
 
 })(jQuery);
