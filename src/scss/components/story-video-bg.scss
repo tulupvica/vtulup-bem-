@@ -6,7 +6,6 @@ $story-video-text-color: #fff;
   position:relative;
   height: 554px;
 
-
   @include media ('<phone') {
     height: 400px;
   }
@@ -57,7 +56,6 @@ $story-video-text-color: #fff;
     background: none;
     border: none;
     font-size: 20px;
-    //border-radius: 50%;
 
     &:hover {
       opacity: 0.6;
