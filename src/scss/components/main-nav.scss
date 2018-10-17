@@ -1,11 +1,10 @@
+$nav-links-color: #fff;
+$nav-links-active-color: #00e0d0;
+$nav-links-border-color: rgba(34, 34, 70, 0.97);
+$nav-bg-color: #312952;
+
 .main-nav {
-
-  $links-color: #fff;
-  $links-active-color: #00e0d0;
-  $links-border-color: rgba(34, 34, 70, 0.97);
-  $nav-bg-color: #312952;
-
-  align-self: center;
+    align-self: center;
 
   @include media ('<tablet') {
     @include animate(transform);
@@ -49,7 +48,7 @@
         margin: 0 0;
       }
 
-      border-bottom: 1px solid $links-border-color;
+      border-bottom: 1px solid $nav-links-border-color;
     }
   }
 
@@ -59,12 +58,12 @@
     display: block;
     text-transform: uppercase;
     font: 900  13px/0 $base-font-family;
-    color: $links-color;
+    color: $nav-links-color;
     text-decoration: none;
 
     &_active,
     &:hover {
-      color: $links-active-color;
+      color: $nav-links-active-color;
     }
 
     @include media ('<tablet') {

@@ -1,0 +1,40 @@
+$team-card-card-border-color: #89829c;
+$team-card-name-color: #fff;
+$team-card-job-color: rgba(255, 255, 255, 0.71);
+
+.team-card {
+  text-align: center;
+
+  &__photo {
+    position: relative;
+    width: 220px;
+    height: 229px;
+    background-color: #fff;
+    z-index: 2;
+
+    @include media ('<desktop') {
+      width: 190px;
+      height: 199px;
+    }
+  }
+
+  &__footer {
+    margin: -2px 0 0 ;
+    border: 1px solid $team-card-card-border-color;
+    padding: 20px 10px 12px;
+  }
+
+  &__name {
+    margin: 0 0 3px;
+    font: 900 #{$base-font-size}/18px $base-font-family;
+    color: $team-card-name-color;
+    text-transform: uppercase;
+  }
+
+  &__job {
+    margin: 0 0 8px;
+    font: $base-font-weight #{$base-font-size}/18px $base-font-family;
+    color: $team-card-job-color;
+    text-transform: uppercase;
+  }
+}

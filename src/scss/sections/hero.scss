@@ -15,7 +15,6 @@
 
   @media ( max-height: 420px ){
     padding: 40px 0 60px;
-    //height: 100%;
   }
 
   &:before {
@@ -27,5 +26,4 @@
     left: 0;
     background: $bg-gradient;
   }
-
 }

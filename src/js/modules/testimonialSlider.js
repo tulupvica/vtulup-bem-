@@ -22,12 +22,12 @@ const testimonialSlider = {
       });
 
       $sliderPhoto.slick({
-          infinite: false,
+          infinite: true,
           initialSlide: 2,
-          slidesToShow: 4,
+          slidesToShow: 5,
           slidesToScroll: 1,
           centerMode: true,
-          centerPadding: '10px',
+          centerPadding: '8px',
           focusOnSelect: true,
           variableWidth: true,
           draggable: false,

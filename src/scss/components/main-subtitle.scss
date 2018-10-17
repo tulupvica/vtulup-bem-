@@ -1,0 +1,13 @@
+.main-subtitle {
+  position: relative;
+  padding: 0 0 19px;
+  font: 400 14px/18px $title-font;
+
+  &:before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    width: 50px;
+    height: 2px;
+  }
+}
