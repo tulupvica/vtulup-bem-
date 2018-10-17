@@ -52,11 +52,12 @@ $story-video-text-color: #fff;
     cursor: pointer;
     margin: 0 0 40px;
     padding: 0;
-    width: 100px;
-    height: 100px;
+    width: 106px;
+    height: 106px;
     background: none;
-    border: 3px solid #fff;
-    border-radius: 50%;
+    border: none;
+    font-size: 20px;
+    //border-radius: 50%;
 
     &:hover {
       opacity: 0.6;
