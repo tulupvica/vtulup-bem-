@@ -1,12 +1,11 @@
+$team-bg-gradient: linear-gradient(to right, rgba(9,5,47,0.85) 0%,rgba(49,29,94,0.85) 100%);
+$team-title-color: #fff;
+$team-subtitle-color: #fff;
+$team-separator-color: rgba(255, 255, 255, 0.21);
+$team-text-color: #fff;
+
 .section-team {
-
-  $bg-gradient: linear-gradient(to right, rgba(9,5,47,0.85) 0%,rgba(49,29,94,0.85) 100%);
-  $title-color: #fff;
-  $subtitle-color: #fff;
-  $separator-color: rgba(255, 255, 255, 0.21);
-  $text-color: #fff;
-
-  padding: 67px 0;
+    padding: 67px 0;
   position: relative;
   min-height: 577px;
   background-size: cover;
@@ -21,7 +20,7 @@
     right: 0;
     bottom: 0;
     left: 0;
-    background: $bg-gradient;
+    background: $team-bg-gradient;
   }
 
   &__content {
@@ -32,18 +31,18 @@
   &__title {
     margin: 0 0 11px;
     text-align: center;
-    color: $title-color;
+    color: $team-title-color;
   }
 
   &__subtitle {
     margin: 0 0 47px;
     text-align: center;
-    color: $subtitle-color;
+    color: $team-subtitle-color;
 
     &:before {
       left: 50%;
       transform: translate(-50%, 0);
-      background-color: $separator-color;
+      background-color: $team-separator-color;
     }
   }
 
@@ -64,7 +63,7 @@
 
   &__text {
     font: $base-font-weight #{$base-font-size}/18px $base-font-family;
-    color: $text-color;
+    color: $team-text-color;
     margin: 0 0 25px;
   }
 
