@@ -1,12 +1,11 @@
+$expertise-card-heading-color: #413d4b;
+$expertise-card-text-color: rgba(51, 51, 51, 0.75);
+$expertise-card-border-color: #ebebeb;
+
 .expertise-card {
-
-  $heading-color: #413d4b;
-  $text-color: rgba(51, 51, 51, 0.75);
-  $border-color: #ebebeb;
-
   margin: -1px;
-  border-left: 1px solid $border-color;
-  border-bottom: 1px solid $border-color;
+  border-left: 1px solid $expertise-card-border-color;
+  border-bottom: 1px solid $expertise-card-border-color;
   padding: 35px 25px 28px;
   width: 28%;
   text-align: center;
@@ -37,7 +36,7 @@
     margin: 0 0 16px;
     font: 900 14px/18px $base-font-family;
     text-transform: uppercase;
-    color: $heading-color;
+    color: $expertise-card-heading-color;
 
     @include media ('<tablet') {
       margin: 0 0 10px;
@@ -46,7 +45,7 @@
 
   &__text {
     margin: 0 0 10px;
-    color: $text-color;
+    color: $expertise-card-text-color;
     font: $base-font-weight #{$base-font-size}/#{$base-line-height} $base-font-family;
   }
 }

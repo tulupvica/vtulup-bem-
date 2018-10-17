@@ -1,20 +1,20 @@
-.section-expertise {
+$expertise-title-color: #413d4b;
+$expertise-subtitle-color: rgba(47, 45, 53, 0.75);
 
-  $title-color: #413d4b;
-  $subtitle-color: rgba(47, 45, 53, 0.75);
+.section-expertise {
 
   padding: 40px 0;
 
   &__title {
     margin: 0 0 11px;
     text-align: center;
-    color: $title-color;
+    color: $expertise-title-color;
   }
 
   &__subtitle {
     margin: 0 0 49px;
     text-align: center;
-    color: $subtitle-color;
+    color: $expertise-subtitle-color;
 
     @include media ('<tablet') {
       margin: 0 0 30px;
