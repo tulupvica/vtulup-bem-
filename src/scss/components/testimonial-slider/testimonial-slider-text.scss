@@ -14,11 +14,19 @@ $testimonial-author-job-color: rgba(255, 255, 255, 0.71);
   }
 
   &__author-text {
+    position: relative;
     margin: 0 auto 30px;
     padding: 83px 0 10px;
     max-width: 780px;
     font: 400 16px/26px $title-font;
     color: $testimonial-text-color;
+  }
+
+  &__quotes {
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    transform: translate(-50%, 0);
   }
 
   &__author-name {

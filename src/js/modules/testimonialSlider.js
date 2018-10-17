@@ -34,6 +34,15 @@ const testimonialSlider = {
           prevArrow: '<button type="button" class="testimonial-slider-photo__prev-btn"></button>',
           nextArrow: '<button type="button" class="testimonial-slider-photo__next-btn"></button>',
           asNavFor: $sliderText,
+          responsive: [
+              {
+                  breakpoint: 767,
+                  settings: {
+                      slidesToShow: 3,
+                      slidesToScroll: 1
+                  }
+              }
+          ]
       });
   }
 };

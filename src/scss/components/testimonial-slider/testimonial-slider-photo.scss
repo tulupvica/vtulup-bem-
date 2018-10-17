@@ -5,6 +5,10 @@
   margin: 0 auto;
   max-width: 400px;
 
+  @include media ('<tablet') {
+    max-width: 200px;
+  }
+
   &__slide {
     @include animate(transform);
 
