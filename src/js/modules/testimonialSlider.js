@@ -22,16 +22,17 @@ const testimonialSlider = {
       });
 
       $sliderPhoto.slick({
-          // fade: true,
           infinite: false,
           initialSlide: 2,
-          // slidesToShow: 3,
+          slidesToShow: 4,
           slidesToScroll: 1,
           centerMode: true,
-          centerPadding: '30px',
+          centerPadding: '10px',
           focusOnSelect: true,
           variableWidth: true,
           draggable: false,
+          prevArrow: '<button type="button" class="testimonial-slider-photo__prev-btn"></button>',
+          nextArrow: '<button type="button" class="testimonial-slider-photo__next-btn"></button>',
           asNavFor: $sliderText,
       });
   }
