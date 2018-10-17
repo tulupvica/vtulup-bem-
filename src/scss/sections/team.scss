@@ -1,0 +1,74 @@
+$team-bg-gradient: linear-gradient(to right, rgba(9,5,47,0.85) 0%,rgba(49,29,94,0.85) 100%);
+$team-title-color: #fff;
+$team-subtitle-color: #fff;
+$team-separator-color: rgba(255, 255, 255, 0.21);
+$team-text-color: #fff;
+
+.section-team {
+    padding: 67px 0;
+  position: relative;
+  min-height: 577px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  z-index: 2;
+
+  &:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: $team-bg-gradient;
+  }
+
+  &__content {
+    position: relative;
+    text-align: center;
+  }
+
+  &__title {
+    margin: 0 0 11px;
+    text-align: center;
+    color: $team-title-color;
+  }
+
+  &__subtitle {
+    margin: 0 0 47px;
+    text-align: center;
+    color: $team-subtitle-color;
+
+    &:before {
+      left: 50%;
+      transform: translate(-50%, 0);
+      background-color: $team-separator-color;
+    }
+  }
+
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -10px 47px;
+    justify-content: center;
+
+    @include media ('<tablet') {
+      margin: 0 -10px 20px;
+    }
+  }
+
+  &__card {
+    margin: 0 10px 20px;
+  }
+
+  &__text {
+    font: $base-font-weight #{$base-font-size}/18px $base-font-family;
+    color: $team-text-color;
+    margin: 0 0 25px;
+  }
+
+  &__btn {
+    min-width: 140px;
+  }
+
+}
