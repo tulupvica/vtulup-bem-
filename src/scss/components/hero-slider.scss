@@ -1,9 +1,9 @@
-.hero-slider {
+$hero-slider-dots-border-color: #fff;
+$hero-slider-dots-active-color: #00e0d0;
+$hero-slider-separator-text-color: #00e0d0;
+$hero-slider-text-color: #fff;
 
-  $dots-border-color: #fff;
-  $dots-active-color: #00e0d0;
-  $separator-text-color: #00e0d0;
-  $text-color: #fff;
+.hero-slider {
 
   &__slide {
     position: relative;
@@ -36,7 +36,7 @@
 
   &__title {
     text-transform: capitalize;
-    color: $text-color;
+    color: $hero-slider-text-color;
     font: 900  32px/36px $title-font;
     margin: 0 0 22px;
 
@@ -51,7 +51,7 @@
 
   &__entry {
     position: relative;
-    color: $text-color;
+    color: $hero-slider-text-color;
     font: $base-font-weight  #{$base-font-size}/24px $base-font-family;
     margin: 0 0 48px;
     padding-top: 24px;
@@ -72,7 +72,7 @@
       transform: translate(-50%, 0);
       height: 1px;
       width: 50px;
-      background-color: $separator-text-color;
+      background-color: $hero-slider-separator-text-color;
     }
   }
 
@@ -99,14 +99,14 @@
       width: 8px;
       background-color: transparent;
       height: 8px;
-      border: 1px solid $dots-border-color;
+      border: 1px solid $hero-slider-dots-border-color;
       border-radius: 50%;
       overflow: hidden;
     }
 
     .slick-active {
       border: 1px solid transparent;
-      background-color: $dots-active-color;
+      background-color: $hero-slider-dots-active-color;
     }
 
     button {

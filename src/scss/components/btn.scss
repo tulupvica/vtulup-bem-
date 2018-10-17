@@ -1,18 +1,19 @@
+$btn-border-color: #00e0d0;
+$btn-text-color: #00e0d0;
+
 .btn {
-
-  $btn-border-color: #00e0d0;
-  $btn-text-color: #00e0d0;
-
   @include animate(opacity);
 
+  display: inline-block;
   background-color: transparent;
-  min-width: 120px;
+  min-width: 98px;
   border: 1px solid $btn-border-color;
   border-radius: 3px;
-  padding: 20px 10px 19px;
+  padding: 20px 10px 18px;
   color: $btn-text-color;
   font: 400  16px/0 $btn-font;
   text-transform: uppercase;
+  cursor: pointer;
 
   &:hover {
     opacity: 0.6;

@@ -17,7 +17,7 @@ $expertise-subtitle-color: rgba(47, 45, 53, 0.75);
     color: $expertise-subtitle-color;
 
     @include media ('<tablet') {
-      margin: 0 0 30px;
+      margin: 0 0 10px;
     }
 
     &:before {
