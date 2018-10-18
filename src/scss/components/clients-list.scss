@@ -1,0 +1,33 @@
+.clients-list {
+
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -10px;
+
+  &__title {
+    margin: 0 18px 44px;
+  }
+
+  &__item {
+    flex: 0 1 50%;
+    margin: 0 0 47px;
+    text-align: center;
+  }
+
+  &__link {
+    @include animate(opacity);
+
+    text-decoration: none;
+    display: inline-block;
+    vertical-align: top;
+    opacity: 1;
+    max-width: 200px;
+  }
+
+  &__logo {
+    max-width: 100%;
+    height: auto;
+    vertical-align: top;
+  }
+
+}
