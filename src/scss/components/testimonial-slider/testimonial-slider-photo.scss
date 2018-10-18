@@ -1,34 +1,51 @@
- $arrows-color: #9f9f9f;
-
 .testimonial-slider-photo {
   position: relative;
   margin: 0 auto;
-  max-width: 400px;
+  max-width: 395px;
+
 
   @include media ('<tablet') {
     max-width: 200px;
   }
 
   &__slide {
-    @include animate(transform);
-
     cursor: pointer;
-    padding: 18px 10px;
   }
 
   &__avatar {
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+    height: auto;
     border-radius: 50%;
     overflow: hidden;
-    width: 45px;
-    height: 45px;
+  }
+
+   .slick-list {
+    transform: translateZ(0);
+    position: relative;
+    display: block;
+    overflow: hidden;
+    margin: 0 auto;
+    width: 317px;
+  }
+
+  .slick-track {
+    display: flex;
+    align-items: center;
+    min-height: 70px;
   }
 
   .slick-slide {
-    outline: none
+    @include animate(width);
+    outline: none;
+    width: 45px;
+    height: auto;
+    margin: 0 7px;
   }
 
-  .slick-current {
-    transform: scale(1.6);
+  .slick-slide.slick-center {
+    width: 70px !important;
   }
 
   &__arrows {
@@ -38,6 +55,8 @@
 
   &__prev-btn,
   &__next-btn {
+    @include animate(opacity);
+
     position: absolute;
     top: 50%;
     transform: translate(0, -50%);
@@ -47,27 +66,17 @@
     cursor: pointer;
     outline: none;
 
-    &:before {
-      @include animate(opacity);
-      @extend [class^="icon-"];
-
-      color: $arrows-color;
-      font-size: 30px;
-    }
-
-    &:hover:before {
-      opacity: 0.5;
+    &:hover {
+      opacity: 0.45;
     }
   }
 
   &__prev-btn {
-    @extend .icon-arrow_left;
-    left: -40px;
+    left: -10px;
   }
 
   &__next-btn {
-    @extend .icon-arrow_right;
-    right: -40px;
+    right: -10px;
   }
 }
 

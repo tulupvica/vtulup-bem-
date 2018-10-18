@@ -29,11 +29,16 @@ const testimonialSlider = {
           centerMode: true,
           centerPadding: '8px',
           focusOnSelect: true,
-          variableWidth: true,
+          variableWidth: false,
           draggable: false,
-          prevArrow: '<button type="button" class="testimonial-slider-photo__prev-btn"></button>',
-          nextArrow: '<button type="button" class="testimonial-slider-photo__next-btn"></button>',
+          prevArrow: '<button type="button" class="testimonial-slider-photo__prev-btn">' +
+              '<img src="../../../assets/images/btn-prev.png" alt="prev">' +
+              '</button>',
+          nextArrow: '<button type="button" class="testimonial-slider-photo__next-btn">' +
+              '<img src="../../../assets/images/btn-next.png" alt="next">' +
+              '</button>',
           asNavFor: $sliderText,
+          speed: 300,
           responsive: [
               {
                   breakpoint: 767,
