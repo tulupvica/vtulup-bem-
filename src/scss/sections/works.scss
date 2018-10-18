@@ -1,0 +1,40 @@
+$works-title-color: #413d4b;
+$all-projects-link-color: #413d4b;
+
+.section-works {
+
+  padding: 47px 0;
+
+  &__header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto 49px;
+    padding: 0 10px;
+    max-width: 960px;
+  }
+
+  &__all-projects-link {
+    font: $base-font-weight 14px/0 $base-font-family;
+    letter-spacing: 0.7px;
+    text-decoration: none;
+    color: $all-projects-link-color;
+  }
+
+  &__content {
+    margin: 0 auto 70px;
+    max-width: 1600px;
+  }
+
+  &__footer {
+    margin: 0 auto;
+    padding: 0 10px;
+    max-width: 960px;
+    text-align: center;
+  }
+
+  &__btn {
+    min-width: 140px;
+  }
+}
