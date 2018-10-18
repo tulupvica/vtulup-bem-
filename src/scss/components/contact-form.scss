@@ -6,6 +6,10 @@ $field-text-color: #413d4b;
 
   &__title {
     margin: 0 0 32px;
+
+    @include media ('<tablet') {
+     text-align: center;
+    }
   }
 
   &__input,
