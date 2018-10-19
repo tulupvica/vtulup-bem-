@@ -1,5 +1,6 @@
 $bg-gradient: linear-gradient(to right, rgba(9,5,47,0.85) 0%,rgba(49,29,94,0.85) 100%);
 $footer-text-color: #fff;
+$phone-hover-color: #00e0d0;
 
 .main-footer {
   position: relative;
@@ -51,6 +52,29 @@ $footer-text-color: #fff;
     color: $footer-text-color;
     font: 900 15px/26px $base-font-family;
     letter-spacing: 0.75px;
+  }
+
+  &__address,
+  &__phone {
+    padding: 0 0 0 20px;
+    font: $base-font-weight #{$base-font-size}/26px $base-font-family;
+    color: $footer-text-color;
+  }
+
+  &__address {
+  
+
+    margin: 0 0 12px;
+  }
+
+  &__phone {
+    @include animate(color);
+
+    text-decoration: none;
+
+    &:hover {
+      color: $phone-hover-color;
+    }
   }
 
   &__row {
