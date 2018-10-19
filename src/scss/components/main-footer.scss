@@ -4,12 +4,15 @@ $phone-hover-color: #00e0d0;
 
 .main-footer {
   position: relative;
-  padding: 40px 0;
+  padding: 68px 0;
   min-height: 400px;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 
+  @include media ('<tablet') {
+    padding: 36px 0;
+  }
 
   &:before {
     content: '';
@@ -26,13 +29,38 @@ $phone-hover-color: #00e0d0;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    //margin: 0 -10px;
+    margin: 0 -20px 27px;
   }
 
   &__col {
     flex-basis: 33.33%;
-    width: 33.33%;
-    //padding: 0 10px;
+    max-width: 33.33%;
+    margin: 0 0 30px;
+    padding: 0 20px;
+    box-sizing: border-box;
+
+    @include media ('<desktop') {
+      flex-basis: 50%;
+      max-width: 50%;
+      margin: 0 0 20px;
+    }
+
+    @include media ('<tablet') {
+      flex-basis: 100%;
+      max-width: 100%;
+    }
+
+    &_large {
+      @include media ('<desktop') {
+        flex-basis: 80%;
+        max-width: 80%;
+      }
+
+      @include media ('<phone') {
+        flex-basis: 100%;
+        max-width: 100%;
+      }
+    }
   }
 
   &__logo {
@@ -44,36 +72,71 @@ $phone-hover-color: #00e0d0;
     letter-spacing: 0.35px;
     color: $footer-text-color;
     margin: 0 0 5px;
-    max-width: 280px;
   }
 
   &__heading {
-    margin: 13px 0 30px;
+    margin: 13px 0 28px;
     color: $footer-text-color;
     font: 900 15px/26px $base-font-family;
     letter-spacing: 0.75px;
+
+    @include media ('<tablet') {
+      margin: 0 0 10px;
+    }
   }
 
   &__address,
   &__phone {
-    padding: 0 0 0 20px;
+    position: relative;
+    padding: 0 0 0 32px;
     font: $base-font-weight #{$base-font-size}/26px $base-font-family;
     color: $footer-text-color;
+
+    &:before {
+      @extend [class^="icon-"];
+      position: absolute;
+      top: 4px;
+      left: 0;
+      font-size: 20px;
+    }
   }
 
   &__address {
-  
+    @extend .icon-map-marker;
 
     margin: 0 0 12px;
-  }
+      }
 
   &__phone {
     @include animate(color);
+
+    @extend .icon-call;
 
     text-decoration: none;
 
     &:hover {
       color: $phone-hover-color;
+    }
+
+    &:before {
+      @include animate(color);
+
+      font-size: 16px;
+    }
+
+    &:hover:before {
+      color: $phone-hover-color;
+    }
+  }
+
+  &__form-subscribe {
+    padding-top: 2px;
+    margin: 0 0 27px;
+    width: 100%;
+    justify-content: space-between;
+
+    @include media ('<desktop') {
+      justify-content: flex-start;
     }
   }
 
@@ -82,6 +145,18 @@ $phone-hover-color: #00e0d0;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    align-items: center;
+
+    @include media ('<tablet') {
+      flex-direction: column;
+      justify-content: center;
+    }
+  }
+
+  &__copyright {
+    margin: 0;
+    font: $base-font-weight #{$base-font-size}/26px $base-font-family;
+    color: $footer-text-color;
   }
 
 }

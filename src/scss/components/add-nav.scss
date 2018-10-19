@@ -1,0 +1,20 @@
+$add-nav-text-color: #fff;
+$add-nav-hover-color: #00e0d0;
+
+.add-nav {
+  @extend %listreset;
+
+  display: flex;
+  flex-wrap: wrap;
+
+  &__item {
+    margin-right: 36px;
+  }
+  
+  &__link {
+    text-transform: uppercase;
+    text-decoration: none;
+    font: $base-font-weight #{$base-font-size}/26px $base-font-family;
+    color: $add-nav-text-color;
+  }
+}

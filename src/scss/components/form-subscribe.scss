@@ -1,0 +1,48 @@
+$subscribe-input-border-color: #a099b3;
+$subscribe-btn-bg-color: #a199b4;
+$subscribe-input-text-color: rgba(255, 255, 255, 0.76);
+.form-subscribe {
+
+  display: flex;
+
+  &__input {
+    border: 1px solid $subscribe-input-border-color;
+    margin-right: 12px;
+    padding: 9px 16px 8px;
+    width: 60%;
+    background: none;
+    font: $base-font-weight #{$base-font-size}/26px $base-font-family;
+    color: $subscribe-input-text-color;
+
+    &::placeholder {
+      color: $subscribe-input-text-color;
+    }
+  }
+
+  &__btn {
+    @extend .icon-paper-plane;
+
+    cursor: pointer;
+    position: relative;
+    border: none;
+    background-color: $subscribe-btn-bg-color;
+    padding: 8px;
+    width: 24%;
+
+    &:before {
+      @include animate(color);
+
+      @extend [class^="icon-"];
+
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      font-size: 28px;
+    }
+
+    &:hover:before {
+      color: #00e0d0;
+    }
+  }
+}
