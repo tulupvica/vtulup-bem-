@@ -1,5 +1,5 @@
 $works-title-color: #413d4b;
-$all-projects-link-color: #413d4b;
+$all-projects-link-color: #5d5d5d;
 
 .section-works {
 
@@ -16,10 +16,27 @@ $all-projects-link-color: #413d4b;
   }
 
   &__all-projects-link {
+    @extend .icon-right-arrow;
+
+    position: relative;
+    display: inline-block;
+    padding: 0 22px 0 0 ;
     font: $base-font-weight 14px/0 $base-font-family;
     letter-spacing: 0.7px;
     text-decoration: none;
     color: $all-projects-link-color;
+
+    &:before {
+      @extend [class^="icon-"];
+      @include animate(opacity);
+
+      position: absolute;
+      right: 0;
+      top: 50%;
+      transform: translate(0, -50%);
+      color: $all-projects-link-color;
+      font-size: 15px;
+    }
   }
 
   &__content {
