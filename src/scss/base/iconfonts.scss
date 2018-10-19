@@ -1,6 +1,6 @@
 @font-face {
   font-family: 'icomoon';
-  src: url('../fonts/icomoon.woff?9vcaim') format('woff');
+  src: url('../fonts/icomoon.woff?cpkort') format('woff');
   font-weight: normal;
   font-style: normal;
 }
@@ -20,6 +20,20 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-call:before {
+  content: "\e906";
+  color: #fff;
+}
+.icon-map-marker:before {
+  content: "\e907";
+  color: #fff;
+}
+.icon-paper-plane:before {
+  content: "\e908";
+}
+.icon-right-arrow:before {
+  content: "\e909";
+}
 .icon-google:before {
   content: "\e900";
 }
@@ -37,10 +51,4 @@
 }
 .icon-facebook:before {
   content: "\e905";
-}
-.icon-arrow_right:before {
-  content: "\e906";
-}
-.icon-arrow_left:before {
-  content: "\e907";
 }
