@@ -17,10 +17,13 @@ const clientsSlider = {
                 infinite: true,
                 slidesToShow: 2,
                 slidesToScroll: 2,
-                arrows: false,
-                dots: true,
-                dotsClass: 'clients-list__dots',
-                adaptiveHeight: true
+                arrows: true,
+                prevArrow: '<button type="button" class="clients-list__prev-btn">' +
+                    '<img src="../../../assets/images/btn-prev.png" alt="prev">' +
+                    '</button>',
+                nextArrow: '<button type="button" class="clients-list__next-btn">' +
+                    '<img src="../../../assets/images/btn-next.png" alt="next">' +
+                    '</button>',
             });
         }
 

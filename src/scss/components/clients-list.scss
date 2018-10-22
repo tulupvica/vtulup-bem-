@@ -9,12 +9,15 @@ $clients-dots-active-color: #00e0d0;
 
   @include media ('<tablet') {
    justify-content: center;
+    margin: 0 auto;
+    max-width: 360px;
   }
 
   &__title {
     margin: 0 18px 44px;
 
     @include media ('<tablet') {
+      margin: 0 18px 26px;
       text-align: center;
     }
   }
@@ -59,44 +62,30 @@ $clients-dots-active-color: #00e0d0;
     vertical-align: top;
   }
 
-  &__dots {
-    @extend %listreset;
-
-    //position: absolute;
-    //left: 50%;
-    //transform: translateX(-50%);
-    //bottom: 0px;
-    display: flex;
-
-
-    li {
-      cursor: pointer;
-      margin: 0 3px;
-      width: 8px;
-      background-color: transparent;
-      height: 8px;
-      border: 1px solid $clients-dots-border-color;
-      border-radius: 50%;
-      overflow: hidden;
-    }
-
-    .slick-active {
-      border: 1px solid transparent;
-      background-color: $clients-dots-active-color;
-    }
-
-    button {
-      display: block;
-      border: none;
-      font-size: 0;
-      background: none;
-      padding: 0;
-    }
-
-  }
-
   .slick-slide {
     outline: none
+  }
+
+  .slick-track {
+    display: flex;
+    align-items: center;
+  }
+
+  .slick-arrow {
+    position: absolute;
+    top: 30%;
+    background: none;
+    border: none;
+  }
+
+  &__prev-btn {
+    left: -40px;
+    z-index: 2;
+  }
+
+  &__next-btn {
+    right: -40px;
+    z-index: 2;
   }
 
 }
