@@ -1,0 +1,48 @@
+$testimonial-text-color: rgba(255, 255, 255, 0.85);
+$testimonial-author-name-color: #fff;
+$testimonial-author-job-color: rgba(255, 255, 255, 0.71);
+
+.testimonial-slider-text {
+  margin: 0 0 34px;
+
+  .slick-slide {
+    outline: none
+  }
+
+  &__slide {
+    text-align: center;
+  }
+
+  &__author-text {
+    position: relative;
+    margin: 0 auto 32px;
+    padding: 83px 0 10px;
+    max-width: 780px;
+    font: 400 16px/26px $title-font;
+    letter-spacing: 0.4px;
+    color: $testimonial-text-color;
+  }
+
+  &__quotes {
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    transform: translate(-50%, 0);
+  }
+
+  &__author-name {
+    margin: 0 0 3px;
+    font: 900 14px/22px $base-font-family;
+    text-transform: uppercase;
+    letter-spacing: 0.7px;
+    color: $testimonial-author-name-color;
+  }
+
+  &__author-job {
+    margin: 0 0 7px;
+    font: $base-font-weight 13px/16px $base-font-family;
+    text-transform: uppercase;
+    color: $testimonial-author-job-color;
+  }
+}
+
