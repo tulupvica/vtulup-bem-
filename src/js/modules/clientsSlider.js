@@ -24,6 +24,15 @@ const clientsSlider = {
                 nextArrow: '<button type="button" class="clients-list__next-btn">' +
                     '<img src="../../../assets/images/btn-next.png" alt="next">' +
                     '</button>',
+                responsive: [
+                    {
+                        breakpoint: 481,
+                        settings: {
+                            slidesToShow: 1,
+                            slidesToScroll: 1
+                        }
+                    }
+                ]
             });
         }
 
@@ -32,13 +41,12 @@ const clientsSlider = {
             initSlider();
         }
 
-        //
-        // $(window).on('resize', function(){
-        //     if(screenWidth > matchMedia) {
-                // $slider.slick('unslick');
-        //
-        //     }
-        // });
+
+        $(window).on('resize', function(){
+            if(screenWidth > matchMedia) {
+                $slider.slick('unslick');
+            }
+        });
 
     }
 };
