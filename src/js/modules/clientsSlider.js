@@ -37,24 +37,18 @@ const clientsSlider = {
 
     function mobileSlider() {
 
-      $slider.each((item, slider) => {
-        /* Initializes a slick carousel only on mobile screens */
-        // slick on mobile
+      if ($(window).width() > matchMedia) {
+        if ($slider.hasClass('slick-initialized')) {
+          $slider.slick('unslick');
+        }
+      }
+      else {
+        if (!$slider.hasClass('slick-initialized')) {
+          initSlider();
+        }
+      }
 
-        console.log(item, slider);
-        if ($(window).width() > matchMedia) {
-          if ($(slider).hasClass('slick-initialized')) {
-            $(slider).slick('unslick');
-          }
-        }
-        else {
-          if (!$(slider).hasClass('slick-initialized')) {
-            initSlider();
-          }
-        }
-      });
     }
-
 
     $(window).on('load resize', mobileSlider);
 
