@@ -2,15 +2,14 @@ const loadImages = {
 
     loadImages: function () {
 
-        const $loadMoreBtn = $('.js-loadBtn'),
+        const $loadMoreBtn = $('.section-works__btn'),
               $projectsList = $('.projects');
 
         let $pageCounter = 1;
 
-
         $loadMoreBtn.on('click', function () {
 
-            let getJson = $.getJSON('../inc/projects-img-' + $pageCounter + '.json', function (result) {
+            $.getJSON('../inc/projects-img-' + $pageCounter + '.json', function (result) {
 
                 $.each(result, function (i) {
                     let htmlContent =
