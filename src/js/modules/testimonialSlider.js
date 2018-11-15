@@ -27,7 +27,7 @@ const testimonialSlider = {
           slidesToShow: 5,
           slidesToScroll: 1,
           centerMode: true,
-          centerPadding: '8px',
+          centerPadding: '7px',
           focusOnSelect: true,
           variableWidth: false,
           draggable: false,
