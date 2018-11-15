@@ -29,7 +29,7 @@ $phone-hover-color: #00e0d0;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    margin: 0 -20px 27px;
+    margin: 0 -15px 27px;
   }
 
   &__col {
@@ -51,15 +51,7 @@ $phone-hover-color: #00e0d0;
     }
 
     &_large {
-      @include media ('<desktop') {
-        flex-basis: 80%;
-        max-width: 80%;
-      }
-
-      @include media ('<phone') {
-        flex-basis: 100%;
-        max-width: 100%;
-      }
+      padding-left: 15px;
     }
   }
 

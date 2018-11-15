@@ -1,15 +1,43 @@
 $subscribe-input-border-color: #a099b3;
-$subscribe-btn-bg-color: #a199b4;
+$subscribe-btn-bg-color: rgba(161, 154, 180, 0.85);
 $subscribe-input-text-color: rgba(255, 255, 255, 0.76);
 .form-subscribe {
 
-  display: flex;
+  position: relative;
+
+  &__group {
+    display: flex;
+  }
+
+  .mc-field-group {
+    max-width: 214px;
+    flex-basis: 214px;
+
+    @include media ('<desktop') {
+      flex-basis: 80%;
+      max-width: 80%;
+    }
+
+    @include media ('<phone') {
+      flex-basis: 100%;
+      max-width: 100%;
+    }
+  }
+
+  #mc_embed_signup div.mce_inline_error {
+    margin: 0;
+    padding: 2px 10px;
+    background-color: rgba(146, 50, 50, 0.76);
+    font: $base-font-weight 13px/16px $base-font-family;
+  }
 
   &__input {
+    width: 100%;
+    display: inline-block;
+    vertical-align: top;
+    height: 45px;
     border: 1px solid $subscribe-input-border-color;
-    margin-right: 12px;
     padding: 9px 16px 8px;
-    width: 60%;
     background: none;
     font: $base-font-weight #{$base-font-size}/26px $base-font-family;
     color: $subscribe-input-text-color;
@@ -20,14 +48,18 @@ $subscribe-input-text-color: rgba(255, 255, 255, 0.76);
   }
 
   &__btn {
-    @extend .icon-paper-plane;
+    @include animate(background);
 
-    cursor: pointer;
     position: relative;
+    display: inline-block;
+    vertical-align: top;
+    margin: 0 0 0 10px;
+    padding: 8px;
+    height: 45px;
+    width: 70px;
     border: none;
     background-color: $subscribe-btn-bg-color;
-    padding: 8px;
-    width: 24%;
+    cursor: pointer;
 
     &:before {
       @include animate(color);
@@ -41,8 +73,12 @@ $subscribe-input-text-color: rgba(255, 255, 255, 0.76);
       font-size: 28px;
     }
 
-    &:hover:before {
-      color: #00e0d0;
+    &:hover {
+      background: lighten($subscribe-btn-bg-color, 16%);
+    }
+
+    &-icon {
+      width: 26px;
     }
   }
 }
