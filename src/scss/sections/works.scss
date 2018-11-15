@@ -13,6 +13,11 @@ $all-projects-link-color: #5d5d5d;
     margin: 0 auto 49px;
     padding: 0 10px;
     max-width: 960px;
+
+    @include media ('<phone') {
+      flex-direction: column;
+      justify-content: center;
+    }
   }
 
   &__all-projects-link {
