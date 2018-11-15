@@ -7,11 +7,13 @@ $expertise-card-border-color: #ebebeb;
   border-left: 1px solid $expertise-card-border-color;
   border-bottom: 1px solid $expertise-card-border-color;
   padding: 35px 25px 28px;
-  width: 28%;
+  max-width: 312px;
+  flex-basis: 312px;
   text-align: center;
 
   @include media ('<desktop') {
-    width: 45%;
+    max-width: 50%;
+    flex-basis: 50%;
     padding: 25px 15px 18px;
   }
 
@@ -20,7 +22,8 @@ $expertise-card-border-color: #ebebeb;
   }
 
   @include media ('<phone') {
-    width: 100%;
+    max-width: 100%;
+    flex-basis: 100%;
   }
 
   &__img {

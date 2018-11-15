@@ -122,4 +122,8 @@ $hero-slider-text-color: #fff;
   .slick-slide {
     outline: none
   }
+
+  &__btn {
+    min-width: 120px;
+  }
 }
