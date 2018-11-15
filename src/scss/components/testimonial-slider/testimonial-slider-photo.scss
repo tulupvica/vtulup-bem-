@@ -27,7 +27,11 @@
     display: block;
     overflow: hidden;
     margin: 0 auto;
-    width: 317px;
+    width: 290px;
+
+     @include media ('<tablet') {
+       width: 174px;
+     }
   }
 
   .slick-track {
@@ -39,7 +43,7 @@
   .slick-slide {
     @include animate(width);
     outline: none;
-    width: 45px;
+    width: 45px !important;
     height: auto;
     margin: 0 7px;
   }
@@ -73,10 +77,18 @@
 
   &__prev-btn {
     left: -10px;
+
+    @include media ('<tablet') {
+      left: -40px;
+    }
   }
 
   &__next-btn {
     right: -10px;
+
+    @include media ('<tablet') {
+      right: -40px;
+    }
   }
 }
 

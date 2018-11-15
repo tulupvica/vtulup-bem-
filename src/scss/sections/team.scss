@@ -5,7 +5,7 @@ $team-separator-color: rgba(255, 255, 255, 0.21);
 $team-text-color: #fff;
 
 .section-team {
-    padding: 67px 0;
+  padding: 67px 0;
   position: relative;
   min-height: 577px;
   background-size: cover;
@@ -49,12 +49,13 @@ $team-text-color: #fff;
   &__list {
     display: flex;
     flex-wrap: wrap;
-    margin: 0 -10px 47px;
     justify-content: center;
+    margin: 0 -15px 47px;
 
     @include media ('<tablet') {
-      margin: 0 -10px 20px;
+      margin: 0 -15px 20px;
     }
+
   }
 
   &__card {
@@ -68,7 +69,7 @@ $team-text-color: #fff;
   }
 
   &__btn {
-    min-width: 118px;
+    min-width: 140px;
   }
 
 }
