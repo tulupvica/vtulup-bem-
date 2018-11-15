@@ -4,7 +4,7 @@ $story-video-text-color: #fff;
 .story-video-bg {
   overflow: hidden;
   position:relative;
-  height: 554px;
+  height: 550px;
 
   @include media ('<phone') {
     height: 400px;
