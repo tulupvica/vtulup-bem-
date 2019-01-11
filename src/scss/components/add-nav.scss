@@ -12,9 +12,14 @@ $add-nav-hover-color: #00e0d0;
   }
   
   &__link {
+    @include animate (opacity);
     text-transform: uppercase;
     text-decoration: none;
     font: $base-font-weight #{$base-font-size}/26px $base-font-family;
     color: $add-nav-text-color;
+
+    &:hover {
+      opacity: 0.5;
+    }
   }
 }

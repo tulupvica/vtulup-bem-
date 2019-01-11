@@ -1,6 +1,7 @@
 $field-border-color: #e5e5e5;
 $placeholder-color: rgba(65, 61, 75, 0.50);
 $field-text-color: #413d4b;
+$focus-border-color: #00e0d0;
 
 .contact-form {
 
@@ -25,6 +26,11 @@ $field-text-color: #413d4b;
 
     &::placeholder {
       color: $placeholder-color;
+    }
+
+    &:focus {
+      outline: none;
+      border: 1px solid $focus-border-color;
     }
   }
 

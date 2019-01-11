@@ -81,11 +81,19 @@ $clients-dots-active-color: #00e0d0;
   &__prev-btn {
     left: -40px;
     z-index: 2;
+
+    @include media ('<phone') {
+      left: -10px;
+    }
   }
 
   &__next-btn {
     right: -40px;
     z-index: 2;
+
+    @include media ('<phone') {
+      right: -10px;
+    }
   }
 
 }

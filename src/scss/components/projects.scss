@@ -7,13 +7,18 @@
     width: 16.66%;
 
     @include media ('<desktop') {
-      width: 33.33%;
-      flex-basis: 33.33%;
+      width: 25%;
+      flex-basis: 25%;
     }
 
     @include media ('<tablet') {
-      width: 50%;
+      flex-basis: 33.33%;
+      width: 33.33%;
+    }
+
+    @include media ('<phone') {
       flex-basis: 50%;
+      width: 50%;
     }
   }
 
@@ -29,7 +34,7 @@
 
   &__img {
     display: block;
-    width: 100%;
+    max-width: 100%;
     height: auto;
   }
 }

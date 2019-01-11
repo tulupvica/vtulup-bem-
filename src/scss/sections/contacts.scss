@@ -4,15 +4,21 @@
   &__content {
     display: flex;
     justify-content: space-between;
-    //margin: 0 -15px;
+    margin: 0 -10px;
 
     @include media ('<tablet') {
       flex-direction: column;
     }
   }
 
+  &__col {
+    flex: 0 1 auto;
+    padding: 0 10px;
+    box-sizing: content-box;
+  }
+
   &__col-first {
-    padding: 0 15px;
+
     flex-basis: 460px;
     max-width: 460px;
 
@@ -29,9 +35,8 @@
   }
 
   &__col-second {
-    padding: 0 15px;
-    flex-basis: 418px;
-    max-width: 418px;
+    flex-basis: 380px;
+    max-width: 380px;
 
     @include media ('<tablet') {
       max-width: 100%;

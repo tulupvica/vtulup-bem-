@@ -1,6 +1,8 @@
 $subscribe-input-border-color: #a099b3;
 $subscribe-btn-bg-color: rgba(161, 154, 180, 0.85);
 $subscribe-input-text-color: rgba(255, 255, 255, 0.76);
+$focus-border-color: #00e0d0;
+
 .form-subscribe {
 
   position: relative;
@@ -44,6 +46,11 @@ $subscribe-input-text-color: rgba(255, 255, 255, 0.76);
 
     &::placeholder {
       color: $subscribe-input-text-color;
+    }
+
+    &:focus {
+      outline: none;
+      border: 1px solid $focus-border-color;
     }
   }
 
