@@ -3,7 +3,9 @@ import heroSlider from './modules/heroSlider';
 import hiddenScroll from './modules/hiddenScroll';
 import videoBackground from './modules/story-video-bg';
 import testimonialSlider from './modules/testimonialSlider';
+import clientsSlider from './modules/clientsSlider';
 import loadImages from './modules/loadImages';
+
 
 
 ( ($) => {
@@ -16,6 +18,7 @@ import loadImages from './modules/loadImages';
       hiddenScroll.hiddenScroll();
       videoBackground.videoBackground();
       testimonialSlider.testimonialSlider();
+      clientsSlider.clientsSlider();
       loadImages.loadImages();
   });
 
