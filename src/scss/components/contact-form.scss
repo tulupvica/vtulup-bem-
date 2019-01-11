@@ -1,0 +1,43 @@
+$field-border-color: #e5e5e5;
+$placeholder-color: rgba(65, 61, 75, 0.50);
+$field-text-color: #413d4b;
+
+.contact-form {
+
+  &__title {
+    margin: 0 0 32px;
+
+    @include media ('<tablet') {
+     text-align: center;
+    }
+  }
+
+  &__input,
+  &__textarea {
+    box-sizing: border-box;
+    display: block;
+    margin: 23px 0;
+    border: 1px solid $field-border-color;
+    border-radius: 2px;
+    width: 100%;
+    font: $base-font-weight #{$base-font-size}/16px $base-font-family;
+    letter-spacing: 0.7px;
+
+    &::placeholder {
+      color: $placeholder-color;
+    }
+  }
+
+  &__input {
+    padding: 14px 17px 13px 19px;
+  }
+
+  &__textarea {
+    padding: 18px 17px 13px 19px;
+    height: 200px;
+  }
+
+  &__btn {
+    min-width: 120px;
+  }
+}
