@@ -1,0 +1,47 @@
+$social-hover-color: #00e0d0;
+$social-color: #fff;
+
+@each $socials in facebook, twitter, dribbble, instagram, google, youtube  {
+  .socials__link_#{$socials} {
+    @extend .icon-#{$socials};
+  }
+}
+
+.socials {
+  @extend %listreset;
+
+  display: flex;
+
+
+  &__item {
+    margin-right: 8px;
+  }
+
+  &__link {
+    @include animate(border);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid $social-color;
+    border-radius: 50%;
+    width: 33px;
+    height: 33px;
+
+    &:hover {
+      border: 1px solid $social-hover-color;
+    }
+
+    &:before {
+      @include animate(color);
+
+      @extend [class^="icon-"];
+      color: $social-color;
+    }
+
+    &:hover:before {
+      color: $social-hover-color;
+    }
+  }
+
+}
