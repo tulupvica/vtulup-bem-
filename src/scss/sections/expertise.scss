@@ -23,10 +23,6 @@ $expertise-separator-color: rgba(198, 196, 201, 0.21);
       background-color: $expertise-separator-color;
     }
 
-    @include media ('<tablet') {
-      margin: 0 0 10px;
-    }
-
     &:before {
       left: 50%;
       transform: translate(-50%, 0);

@@ -34,6 +34,8 @@ $focus-border-color: #00e0d0;
   }
 
   &__input {
+    -webkit-appearance: none;
+    -webkit-border-radius: 0;
     width: 100%;
     display: inline-block;
     vertical-align: top;

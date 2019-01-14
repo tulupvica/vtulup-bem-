@@ -88,10 +88,6 @@ $hero-slider-text-color: #fff;
       bottom: 20px;
     }
 
-    @media ( max-height: 300px ){
-      bottom: 5px;
-    }
-
     li {
       cursor: pointer;
       margin: 0 3px;

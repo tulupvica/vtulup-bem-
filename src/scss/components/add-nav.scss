@@ -9,6 +9,10 @@ $add-nav-hover-color: #00e0d0;
 
   &__item {
     margin-right: 36px;
+
+    @include media ('<phone') {
+      margin-right: 20px;
+    }
   }
   
   &__link {
