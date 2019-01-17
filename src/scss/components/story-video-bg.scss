@@ -49,7 +49,7 @@ $story-video-text-color: #fff;
     @include animate(opacity);
 
     cursor: pointer;
-    margin: 0 0 40px;
+    margin: 0 0 30px;
     padding: 0;
     width: 106px;
     height: 106px;
@@ -64,7 +64,7 @@ $story-video-text-color: #fff;
 
   &__description {
     margin: 0 0 10px;
-    font: 900  16px/0 $base-font-family;
+    font: 900  16px/16px $base-font-family;
     color: $story-video-text-color;
   }
 

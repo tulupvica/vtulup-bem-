@@ -5,6 +5,7 @@
 
 body {
   margin: 0;
+  -webkit-text-size-adjust: none;
 
   &.hidden-scroll {
     overflow: hidden;
