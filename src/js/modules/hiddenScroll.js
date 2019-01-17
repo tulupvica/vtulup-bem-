@@ -8,6 +8,7 @@ const hiddenScroll = {
             hamburgerBtn = ('.burger-btn'),
             hiddenScroll = ('hidden-scroll');
 
+
         $(hamburgerBtn).on('click', function () {
             $body.toggleClass(hiddenScroll);
         });

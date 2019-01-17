@@ -1,5 +1,7 @@
 .logo {
   @include animate(opacity);
+  position: relative;
+  z-index: 3;
 
   display: inline-block;
 
