@@ -12,6 +12,7 @@ const videoBackground = {
         $pause.hide();
 
         $play.on('click', function () {
+            $video.css('width', 'auto');
 
             if($video[0].play()) {
                 $play.hide();
@@ -29,11 +30,13 @@ const videoBackground = {
         });
 
         $pause.on('click', function () {
+          $video.css('width', '100%');
 
             if($video[0].play()) {
                 $pause.hide();
                 $play.show();
                 $video[0].pause();
+                $videoSection.removeClass($videoActive);
             }
         });
     }

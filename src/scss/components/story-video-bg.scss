@@ -10,8 +10,10 @@ $story-video-text-color: #fff;
     height: 400px;
   }
 
-  &.story-video-bg_active:before{
-    background: none;
+  &.story-video-bg_active {
+    &:before {
+      background: none;
+    }
   }
 
   &:before {
