@@ -41,6 +41,34 @@
       }
     }
 
+    .story-video-bg {
+      background-image: url("assets/images/bg-1-1600px.jpg");
+    }
+
+    @media (max-width: 1280px) {
+      .story-video-bg {
+        background-image: url("assets/images/bg-1-1280px.jpg");
+      }
+    }
+
+    @media (max-width: 980px) {
+      .story-video-bg {
+        background-image: url("assets/images/bg-1-980px.jpg");
+      }
+    }
+
+    @media (max-width: 768px) {
+      .story-video-bg {
+        background-image: url("assets/images/bg-1-768px.jpg");
+      }
+    }
+
+    @media (max-width: 414px) {
+      .story-video-bg {
+        background-image: url("assets/images/bg-1-414px.jpg");
+      }
+    }
+
     .section-testimonials {
       background-image: url("assets/images/bg-3-1600px.jpg");
     }
@@ -246,11 +274,8 @@
     <!--end section-our-story-->
 
     <section class="story-video-bg">
-      <video poster="assets/images/bg-1-1600px.jpg" class="story-video-bg__video">
-        <source src="assets/video/video.mp4" type="video/mp4">
-      </video>
-      <div class="story-video-bg__buttons">
-        <button class="story-video-bg__btn-play" type="button">
+      <div class="story-video-bg__controls">
+        <a data-fancybox href="assets/video/video.mp4" class="story-video-bg__btn-play">
           <svg xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 512 512">
             <g>
               <g fill="#231F20">
@@ -263,44 +288,7 @@
               </g>
             </g>
           </svg>
-        </button>
-        <button class="story-video-bg__btn-pause" type="button">
-          <svg xmlns="http://www.w3.org/2000/svg" version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 612.074 612.074" style="enable-background:new 0 0 612.074 612.074;" xml:space="preserve">
-                <g>
-                    <path d="M306.037,0.037C136.997,0.037,0,137.034,0,306.074s136.997,305.963,306.037,305.963S612.074,475.04,612.074,306   S475.003,0.037,306.037,0.037z M306.037,583.258c-152.203,0-276.368-124.165-276.368-276.368S153.834,30.522,306.037,30.522   S582.405,154.687,582.405,306.89S458.24,583.258,306.037,583.258z M257.157,189.92h-48.064c-15.205,0-27.221,12.016-27.221,27.221   v179.424c0,15.205,12.016,27.221,27.221,27.221h48.064c15.205,0,27.221-12.016,27.221-27.221V217.141   C284.379,201.936,272.363,189.92,257.157,189.92z M254.71,393.376h-42.427V219.515h42.427V393.376z M402.165,189.92h-48.064   c-15.205,0-27.221,12.016-27.221,27.221v179.424c0,15.205,12.016,27.221,27.221,27.221h48.064   c15.205,0,27.221-12.016,27.221-27.221V217.141C429.387,201.936,417.371,189.92,402.165,189.92z M399.717,393.376h-42.427V219.515   h42.427V393.376z" fill="#FFFFFF"/>
-                </g>
-                <g>
-                </g>
-                <g>
-                </g>
-                <g>
-                </g>
-                <g>
-                </g>
-                <g>
-                </g>
-                <g>
-                </g>
-                <g>
-                </g>
-                <g>
-                </g>
-                <g>
-                </g>
-                <g>
-                </g>
-                <g>
-                </g>
-                <g>
-                </g>
-                <g>
-                </g>
-                <g>
-                </g>
-                <g>
-                </g>
-            </svg>
-        </button>
+        </a>
         <p class="story-video-bg__description">WATCH OUR STORY</p>
       </div>
 
@@ -771,6 +759,7 @@
 }(jQuery));
 var $mcj = jQuery.noConflict(true);</script>
 <script src="assets/js/app.js" defer></script>
+
 </body>
 
 </html>

@@ -1,5 +1,5 @@
 // All imports in this file will be compiled into vendors.css file.
 //
 // Note: You can import SCSS and CSS files as well.
-
-@import '../../node_modules/slick-carousel/slick/slick.css';
+@import '../../node_modules/slick-carousel/slick/slick.css',
+        '../../node_modules/@fancyapps/fancybox/dist/jquery.fancybox.min.css';
